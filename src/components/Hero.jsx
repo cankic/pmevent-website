@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import heroImage from "../assets/hero.jpg"; // import slike
 
 export const Hero = () => {
   return (
@@ -20,7 +21,7 @@ export const Hero = () => {
     >
       {/* POZADINSKA SLIKA */}
       <img
-        src="/src/assets/hero.jpg" // <-- OVDE ubaci svoju sliku
+        src={heroImage}
         alt="PM EVENT"
         style={{
           position: "absolute",
@@ -28,9 +29,9 @@ export const Hero = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          objectFit: "contain",
+          objectFit: "cover",
           zIndex: 0,
-          filter: "brightness(0.5)", // tamnija pozadina za bolji kontrast teksta
+          filter: "brightness(0.5)",
         }}
       />
 

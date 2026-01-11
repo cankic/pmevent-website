@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import usluga1 from "../assets/usluga1.jpg";
+import usluga2 from "../assets/usluga2.jpg";
+import usluga3 from "../assets/usluga3.jpg";
 
 export const Services = () => {
   return (
@@ -29,7 +32,6 @@ export const Services = () => {
           margin: "0 auto",
         }}
       >
-        {/* KARTICA 1 */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           style={{
@@ -40,7 +42,7 @@ export const Services = () => {
           }}
         >
           <img
-            src="/src/assets/usluga1.jpg"   // <-- OVDE ubaci svoju sliku
+            src={usluga1}
             alt="Barski stolovi"
             style={{
               width: "100%",
@@ -54,7 +56,6 @@ export const Services = () => {
           <p>Moderan i stabilan inventar za sve vrste proslava i događaja.</p>
         </motion.div>
 
-        {/* KARTICA 2 */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           style={{
@@ -65,7 +66,7 @@ export const Services = () => {
           }}
         >
           <img
-            src="/src/assets/usluga2.jpg"   // <-- OVDE ubaci svoju sliku
+            src={usluga2}
             alt="Event oprema"
             style={{
               width: "100%",
@@ -79,7 +80,6 @@ export const Services = () => {
           <p>Sve što vam je potrebno za profesionalan događaj na jednom mestu.</p>
         </motion.div>
 
-        {/* KARTICA 3 */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           style={{
@@ -90,7 +90,7 @@ export const Services = () => {
           }}
         >
           <img
-            src="/src/assets/usluga3.jpg"   // <-- OVDE ubaci svoju sliku
+            src={usluga3}
             alt="Dostava i montaža"
             style={{
               width: "100%",
